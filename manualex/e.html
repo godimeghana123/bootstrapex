@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+           text-align: center;
+        }
+        body{
+            background-color: beige;
+        }
+    </style>
+    <script>
+        function fn(){
+        a=document.getElementById('name')
+        b=document.getElementById('email')
+        c=document.getElementById('pass')
+        d=document.getElementById('radio')
+        e=document.getElementById('cb')
+        f=document.getElementById('branch')
+        if(a.value=='' | a.value.length>6)
+        {
+            alert('enter first field or more digits')
+            return false
+        }
+        if(b.value=='')
+        {
+            alert('enter email')
+        }
+    }
+
+    </script>
+</head>
+
+<body>
+    <form action="ex3.html" onsubmit="return fn()">
+    <h2>Registration Form</h2>
+    <div>
+        Name <input type="text" placeholder="name" id="name">  <br> <br>
+        password <input type="password" placeholder="password" id="pass"> <br> <br>
+        Email <input type="email" placeholder="email" id="email">   <br> <br>
+        Gender <input type="radio" name="radio" id="radio">Male  <input type="radio" name="radio" id="radio">Female <br> <br>
+        Interests <input type="checkbox" name="" id="cb">singing <br><input type="checkbox" name="" id="cb">coding <br> <input type="checkbox" name="" id="cb">painting <br>
+        branch <select name="" id="branch"> <option value="it">it</option>
+            <option value="it">cse</option>
+            <option value="it">ece</option>
+            <option value="it">mec</option></select> <br> <br>
+        <input type="submit" value="submit">
+    </div>
+</form>
+
+
+</body>
+
+</html>

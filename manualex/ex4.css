@@ -1,0 +1,29 @@
+body{
+    background-color: violet;
+}
+.me{
+    color: blue;
+}
+.you{
+   text-align:right;
+}
+.image{
+    width: 250px;
+    height: 250px;
+}
+p{
+    margin-top: 150px;
+    margin-bottom: 200px;
+}
+#para{
+    text-align: center;
+    color: red;
+    margin-left: 10px;
+}
+h5.border{
+    border-style: dotted;
+
+}
+h5.dashed{
+    border-style: dashed;
+}

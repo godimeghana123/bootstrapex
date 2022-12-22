@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><link rel="stylesheet" href="form1.css">
+    <script>
+        function fn(){
+            let a=document.getElementById('fname')
+            let c=document.getElementById('email')
+            let d=document.getElementById('mn')
+            let e=document.getElementById('radio1')
+            let ad=document.getElementById('add')
+            if(a.value==""||a.value.length>6)
+              {
+                alert("enter first field or more characters")
+                return false
+              }
+            if(c.value=="")
+            {
+                alert("enter email field")
+                return false
+            }
+            if(d.value==""||d.value.length>10)
+            {
+                alert("enter phone number field or morethan 10 digits")
+                return false
+            }
+            if(!e.value==0)
+            {
+                alert("choose any button")
+                return false
+            }
+            if(ad.value=="")
+            {
+                alert("enter address")
+                return false
+            } 
+            
+
+
+        }
+
+
+    </script>
+    <style>
+        body{
+            background-color: blanchedalmond;
+        }
+        h5{
+            font-size: large;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h5>Registration form</h5>
+    <div class="blk">
+        <form action="submit.htm" onsubmit="return fn()">
+            <pre><span class="sp">Name                    <input type="text" name="" id="fname" size="40"> </span></pre>  <br>
+            <pre><span class="sp">password                <input type="password" name="" id=""></span></pre>
+           <pre><span class="sp">Email                   <input type="email" name="" id="email" size="40">          </span></pre><br>
+           <pre><span class="sp">Mobile Number           <input type="text" name="" id="mn" size="40">  </span></pre><br>
+           <pre><span class="sp">Gender                   <input type="radio" name="radio1" id="radio1" size="40"> Male   <input type="radio" name="radio1" id="radio1"> Female</span></pre><br>
+           
+           <pre><span class="sp1">Address                 <input type="text" name="" id="add" class="ad1">           </span></pre><br>
+           
+           <pre class="opre">Languages<div class="divcheck"><input type="checkbox" name="ch11" id="ch11">English</div><div class="divcheck"><input type="checkbox" name="ch12" id="ch12">Telugu</div><div class="divcheck"><input type="checkbox" name="ch13" id="ch13">Hindi</div><div class="divcheck"><input type="checkbox" name="ch14" id="ch14">Tamil</div></pre>
+        <span><input type="submit" id="submit" value="submit">     
+   
+   
+   
+        </form>
+    
+
+    </div>
+</body>
+</html>

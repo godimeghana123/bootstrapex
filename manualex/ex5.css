@@ -1,0 +1,29 @@
+p::first-line{
+    color: red;
+    font-size: medium;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+p::first-letter{
+    color: blueviolet;
+    font-size: larger;
+    font-style: italic;
+}
+h5::before{
+    content:url("smiling.png");
+}
+a:hover{
+    background-color: blue;
+    color: palevioletred;
+}
+a:visited{
+    color: green;
+}
+div{
+    text-align: center;
+    background-color: bisque;
+    width: 400px;
+    height: 200px;
+}
+div:hover{
+    background-color: blueviolet;
+}
